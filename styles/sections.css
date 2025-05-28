@@ -2,8 +2,13 @@ main {
   padding: 6rem 8rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   margin-bottom: 5rem;
+  scroll-margin-top: 6rem;
 }
 
 #about p {
@@ -16,7 +21,8 @@ a {
   text-decoration: none;
 }
 
-.experience-grid {
+.experience-grid,
+.education-grid {
   display: grid;
   grid-template-columns: 12rem 1fr;
   margin-bottom: 2rem;
@@ -26,7 +32,8 @@ a {
   transition: var(--bg-color-3) 0.3s ease;
 }
 
-.experience-grid:hover {
+.experience-grid:hover,
+.education-grid:hover {
   background-color: rgba(100, 255, 218, 0.05); 
 }
 
@@ -35,12 +42,19 @@ a {
   font-weight: bold;
 }
 
-.experience-time p {
+.education-grid:hover a {
+  color: #00bebe; 
+}
+
+.experience-time p,
+.education-time p,
+.education-place {
   color: var(--bg-color-4);
   font-size: 0.9rem;
 }
 
-.job-title {
+.job-title,
+.education-title {
   color: rgb(240, 240, 240);
   font-weight: bold;
   margin-bottom: 1rem;
