@@ -1,1 +1,42 @@
-/* TODO: Add layout styles */
+.flex-container {
+  display: flex;
+  min-height: 100vh;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  width: 26rem;
+  min-height: 100vh;
+  height: auto;
+  overflow-y: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: right;
+}
+
+main {
+  flex: 1;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.icons-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+

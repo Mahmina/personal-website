@@ -1,1 +1,3 @@
-/* TODO: Add sections styles */
+body {
+  background-color: var(--bg-color-2);
+}
