@@ -1,5 +1,5 @@
 main {
-  padding: 6rem 8rem;
+  padding: 6rem 5rem;
 }
 
 html {
@@ -7,7 +7,7 @@ html {
 }
 
 section {
-  margin-bottom: 5rem;
+  margin-bottom: 9rem;
   scroll-margin-top: 6rem;
 }
 
@@ -23,10 +23,6 @@ a {
 
 .experience-grid,
 .education-grid {
-  display: grid;
-  grid-template-columns: 12rem 1fr;
-  margin-bottom: 2rem;
-  padding: 1rem;
   border: none solid transparent;
   border-radius: 8px;
   transition: var(--bg-color-3) 0.3s ease;
@@ -65,3 +61,65 @@ a {
   line-height: 1.6rem;
   font-size: 0.9rem;
 }
+
+.skill-flex-wrapper {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: rgba(100, 255, 218, 0.05);
+  border: none;
+}
+
+.dev-wrapper h2,
+.tools-wrapper h2 {
+  color: rgb(240, 240, 240);
+  margin-bottom: 1.8rem;
+}
+
+.dev-item {
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid rgba(70, 70, 70, 0.5);
+  border-radius: 50%;
+  padding: 2rem;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color 0.15s;
+  transition: background-color 0.5s;
+}
+
+.dev-item:hover {
+  background-color: #3b9494d6;
+  color: #00bebe;
+  border: none;
+  font-weight: bold;
+}
+
+.tools-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2rem;
+}
+
+.tools-list span {
+  color: whitesmoke;
+  transition: color 0.5s;
+}
+
+.tools-item {
+  cursor: pointer;
+}
+
+.tools-item:hover span {
+  color: #00bebe;
+}
+
+
+
+
+
+
+
+
+

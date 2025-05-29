@@ -39,4 +39,41 @@ main {
   justify-content: flex-start;
 }
 
+.experience-grid,
+.education-grid {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
 
+.skill-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dev-wrapper {
+  flex: 1;
+  padding: 1rem;
+}
+
+.tools-wrapper {
+  flex: 1;
+  padding: 1rem;
+}
+
+.dev-list {
+  display: grid;
+  grid-template-columns: repeat(2, 7rem); 
+  row-gap: 1rem; 
+  padding-left: 0;
+  place-items: left;
+}
+
+.dev-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
