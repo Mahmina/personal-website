@@ -22,18 +22,21 @@ a {
 }
 
 .experience-grid,
-.education-grid {
+.education-grid,
+.project-grid {
   border: none solid transparent;
   border-radius: 8px;
-  transition: var(--bg-color-3) 0.3s ease;
+  transition: var(--bg-color-3) 0.5s ease;
 }
 
 .experience-grid:hover,
-.education-grid:hover {
+.education-grid:hover,
+.project-grid:hover {
   background-color: rgba(100, 255, 218, 0.05); 
 }
 
-.experience-grid:hover a {
+.experience-grid:hover a,
+.project-grid:hover a {
   color: #00bebe; 
   font-weight: bold;
 }
@@ -50,13 +53,15 @@ a {
 }
 
 .job-title,
-.education-title {
+.education-title,
+.project-title {
   color: rgb(240, 240, 240);
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.job-description {
+.job-description,
+.project-description {
   color: var(--bg-color-4);
   line-height: 1.6rem;
   font-size: 0.9rem;
@@ -90,7 +95,7 @@ a {
 }
 
 .dev-item:hover {
-  background-color: #3b9494d6;
+  background-color: rgba(62, 92, 89, 0.623);
   color: #00bebe;
   border: none;
   font-weight: bold;
@@ -115,11 +120,39 @@ a {
   color: #00bebe;
 }
 
+.project-grid {
+  gap: 0.8rem;
+}
 
+.project-pic img {
+  width: 11rem;
+  margin-top: 1.2rem;
+  border: 1.7px solid rgb(65, 65, 65);
+  border-radius: 3px;
+}
 
+.project-grid:hover img {
+  border: 2px solid rgb(89, 89, 89);
+} 
 
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #00bebe;
+}
 
+.tech-stack li {
+  margin-right: 1rem;
+  background-color: rgba(62, 92, 89, 0.623);
+  padding: 0.4rem 0.5rem;
+  border-radius: 35px;
+  font-size: 0.8rem;
+}
 
-
-
+.tech-stack {
+  margin-top: 1rem;
+}
 

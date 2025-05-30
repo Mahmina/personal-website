@@ -40,7 +40,8 @@ main {
 }
 
 .experience-grid,
-.education-grid {
+.education-grid,
+.project-grid  {
   display: grid;
   grid-template-columns: 12rem 1fr;
   margin-bottom: 2rem;
