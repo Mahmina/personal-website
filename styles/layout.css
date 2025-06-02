@@ -14,7 +14,7 @@
   width: 26rem;
   min-height: 100vh;
   height: auto;
-  overflow-y: overlay;
+  /* overflow-y: overlay; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

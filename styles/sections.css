@@ -7,7 +7,7 @@ html {
 }
 
 section {
-  margin-bottom: 9rem;
+  margin-bottom: 8rem;
   scroll-margin-top: 6rem;
 }
 
@@ -154,5 +154,21 @@ a {
 
 .tech-stack {
   margin-top: 1rem;
+}
+
+.section-title h2 {
+  color: rgba(245, 245, 245, 0.88);
+  font-size: 0.99rem;
+  margin-bottom: 1.2rem;
+}
+
+.section-title {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    display: block;
+  }
 }
 

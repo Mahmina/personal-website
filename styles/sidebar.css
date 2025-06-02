@@ -117,3 +117,63 @@ svg {
 .social-icon:hover .tooltip {
   opacity: 1;
 }
+
+.top-bar {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--bg-color-2);
+    flex-direction: column;
+    align-items: flex-start; 
+    box-shadow: none;
+    padding: 3rem 5rem; 
+  }
+
+  main {
+    z-index: 1000;
+    margin-top: 15rem;
+  }
+
+  .icons-flex {
+    margin-top: 2rem;
+  }
+
+  .sidebar .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sidebar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .sidebar h1 {
+    font-size: 2.2rem;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2rem;
+  }
+}
