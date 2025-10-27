@@ -1,6 +1,6 @@
 .sidebar {
   background-color: var(--bg-color-1);
-  padding: 6rem 3rem; 
+  padding: 5rem 3rem; 
   padding-bottom: 0;
   box-shadow: 5px 0px 20px rgb(6, 6, 38);
 }
@@ -82,7 +82,7 @@
 
 .icons-flex {
   list-style: none;
-  margin-top: 7rem;
+  margin-top: 5rem;
   padding-left: 0;
 }
 

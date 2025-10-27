@@ -1,0 +1,47 @@
+.container {
+  margin: 5rem 11rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr { 
+  border: solid;
+  border-width: 1px 0;
+  border-color: rgb(59, 66, 80);
+  color: rgb(240, 240, 240);
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+h1 {
+  color: rgb(240, 240, 240);
+  margin-bottom: 3rem;
+  font-size: 2.6rem;
+}
+
+.table-header {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #00bebe;;
+}

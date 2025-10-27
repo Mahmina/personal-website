@@ -144,16 +144,16 @@ a {
   color: #00bebe;
 }
 
+.description {
+  padding-bottom: 1rem;
+}
+
 .tech-stack li {
   margin-right: 1rem;
   background-color: rgba(62, 92, 89, 0.623);
   padding: 0.4rem 0.5rem;
   border-radius: 35px;
   font-size: 0.8rem;
-}
-
-.tech-stack {
-  margin-top: 1rem;
 }
 
 .section-title h2 {
@@ -166,9 +166,20 @@ a {
   display: none;
 }
 
+.all_projects a {
+  color: rgb(240, 240, 240);
+  font-weight: bold;
+  margin-left: 1.3rem;
+}
+
+.all_projects a:hover {
+  border-bottom: 2px solid #00bebe;
+}
+
 @media (max-width: 992px) {
   .section-title {
     display: block;
   }
 }
+
 
