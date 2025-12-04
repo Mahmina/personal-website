@@ -14,7 +14,6 @@
   width: 26rem;
   min-height: 100vh;
   height: auto;
-  /* overflow-y: overlay; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -87,7 +86,7 @@ main {
 
   background: radial-gradient(
     400px at var(--mouse-x) var(--mouse-y),
-    rgba(79, 96, 224, 0.123),
+    rgba(224, 225, 235, 0.123),
     transparent 80%
   );
 

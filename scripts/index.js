@@ -1,3 +1,9 @@
+import {setupScrollSpy} from './scrollspy.js';
+
+setupScrollSpy(document.querySelector('.navigation'));
+
+
+
 const glow = document.querySelector(".mouse-glow");
 
 document.addEventListener("mousemove", (e) => {
