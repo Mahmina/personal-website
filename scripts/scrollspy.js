@@ -1,11 +1,11 @@
 export function setupScrollSpy(element) {
-  const links = Array.from(element.querySelectorAll('a[href^="#"'));
+  const links = Array.from(element.querySelectorAll('a[href^="#"]'));
   const sections = Array.from(document.querySelectorAll('[data-section-id]'));
 
   let clickLock = false;
   
   const observer = new IntersectionObserver(onIntersection, {
-    threshold: [0.8, 1]
+    threshold: [0.5, 1]
   });
 
   sections.forEach((section) => {

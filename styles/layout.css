@@ -86,7 +86,7 @@ main {
 
   background: radial-gradient(
     400px at var(--mouse-x) var(--mouse-y),
-    rgba(224, 225, 235, 0.123),
+    rgba(84, 90, 145, 0.123),
     transparent 80%
   );
 
