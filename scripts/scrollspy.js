@@ -4,28 +4,43 @@ export function setupScrollSpy(element) {
 
   let clickLock = false;
   
+  const sectionRatios = new Map();
+  
   const observer = new IntersectionObserver(onIntersection, {
-    threshold: [0.5, 1]
+    threshold: [0, 0.5, 1] 
   });
 
   sections.forEach((section) => {
     observer.observe(section);
+    sectionRatios.set(section, 0);
   });
 
   function onIntersection(entries) {
      if (clickLock) return;
 
     entries.forEach((entry => {
-      if (entry.isIntersecting) {
-        const section = entry.target;
-        const sectionId = `#${section.dataset.sectionId}`;
-        const link = links.find((link) => link.getAttribute('href') === sectionId);
+      sectionRatios.set(entry.target, entry.intersectionRatio);
+    }));
 
+    let maxRatio = 0;
+    let bestSection = null;
+
+    sectionRatios.forEach((ratio, section) => {
+      if (ratio > maxRatio) {
+        maxRatio = ratio;
+        bestSection = section;
+      }
+    });
+
+    if (bestSection && maxRatio > 0) {
+      const sectionId = `#${bestSection.dataset.sectionId}`;
+      const link = links.find((link) => link.getAttribute('href') === sectionId);
+
+      if (link) {
         highlightLink(link);
         history.pushState(null, null, sectionId);
-
       }
-    }));
+    }
   }
 
   links.forEach((link) => {
