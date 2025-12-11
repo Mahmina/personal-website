@@ -8,19 +8,20 @@
 }
 
 .sidebar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  align-self: flex-start;
-  width: 26rem;
-  min-height: 100vh;
-  height: auto;
+  left: 0;
+  width: 26rem;       
+  height: 100vh;
+  padding: 2rem;        
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: right;
+  justify-content: space-between;
 }
 
 main {
+  margin-left: 26rem;     
+  padding: 2rem;
   flex: 1;
 }
 

@@ -86,8 +86,9 @@
 
 .icons-flex {
   list-style: none;
-  margin-top: 5rem;
+  /* margin-top: 1rem; */
   padding-left: 0;
+  margin-bottom: 4rem;
 }
 
 .icons-flex li {
@@ -125,6 +126,12 @@ svg {
 .top-bar {
   display: none;
 }
+/* 
+@media (min-width: 1024px) {
+  .sidebar  {
+      position: sticky;
+  }
+} */
 
 @media (max-width: 992px) {
   .sidebar {
