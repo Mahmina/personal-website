@@ -11,114 +11,18 @@
 </head>
 <body>
   <div class="container">
-    <!-- <a href="index.html">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-      </svg>
-      Home Page
-    </a> -->
     <h1>All Projects</h1>
     <table>
-      <tr>
-        <td class="table-header">Project</td>
-        <td class="table-header table-header-tech">Built with</td>
-        <td class="table-header">GitHub link</td>
-      </tr>
-      <tr>
-        <td>Personal Website</td>
-        <td class="tech-stack-column">
-          <ul class="tech-stack">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </td>
-        <td>
-          <a class="project-link" href="https://github.com/Mahmina/personal-website" target="_blank">
-            https://github.com/Mahmina/personal-website
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>Blog with Users</td>
-        <td class="tech-stack-column">
-          <ul class="tech-stack">
-            <li>Flask</li>
-            <li>SQLAlchemy</li>
-            <li>Flask-Login</li>
-            <li>Bootstrap 5</li>
-            <li>Flask-CKEditor</li>
-          </ul>
-        </td>
-        <td>
-          <a class="project-link" href="https://github.com/Mahmina/blog-with-users" target="_blank">
-            https://github.com/Mahmina/blog-with-users
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>To-Do List</td>
-        <td class="tech-stack-column">
-          <ul class="tech-stack">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </td>
-        <td>
-          <a class="project-link" href="https://github.com/Mahmina/todo-list" target="_blank">
-            https://github.com/Mahmina/todo-list
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>Morse Converter</td>
-        <td class="tech-stack-column">
-          <ul class="tech-stack">
-            <li>Python</li>
-            <li>Tkinter</li>
-          </ul>
-        </td>
-        <td>
-          <a class="project-link" href="https://github.com/Mahmina/morse-converter" target="_blank">
-            https://github.com/Mahmina/morse-converter
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>Job Tracker</td>
-        <td class="tech-stack-column">
-          <ul class="tech-stack">
-            <li>Python</li>
-            <li>Selenium</li>
-            <li>Chrome/ChromeDriver</li>
-            <li>SMTP (smtplib)</li>
-            <li>REST API</li>
-          </ul>
-        </td>
-        <td>
-          <a class="project-link" href="https://github.com/Mahmina/job-tracker" target="_blank">
-            https://github.com/Mahmina/job-tracker
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>Café finder</td>
-        <td class="tech-stack-column">
-          <ul class="tech-stack">
-            <li>Flask</li>
-            <li>Flask-Bootstrap</li>
-            <li>Flask-WTF</li>
-            <li>SQLAlchemy</li>
-          </ul>
-        </td>
-        <td>
-          <a class="project-link" href="https://github.com/Mahmina/cafe-cortex" target="_blank">
-            https://github.com/Mahmina/cafe-cortex
-          </a>
-        </td>
-      </tr>
+      <thead>
+        <tr>
+          <td class="table-header">Project</td>
+          <td class="table-header table-header-tech">Built with</td>
+          <td class="table-header">GitHub link</td>
+        </tr>
+      </thead>
+      <tbody class="table-row"></tbody>
     </table>
   </div>
+  <script type="module" src="./scripts/all-projects.js"></script>
 </body>
 </html>
