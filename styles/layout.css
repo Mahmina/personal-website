@@ -117,13 +117,19 @@ main {
 
   .skill-flex-wrapper {
     flex-direction: column;
+    gap: 3rem;
   }
 
   .dev-list {
-    grid-template-columns: repeat(5, 7rem);
+    grid-template-columns: repeat(3, 7rem);
   }
 
   .dev-wrapper h2, .tools-wrapper h2 {
     margin-bottom: 1.5rem;
+  }
+
+  .dev-wrapper,
+  .tools-wrapper {
+    padding: 0;
   }
 }

@@ -184,4 +184,8 @@ svg {
   .sidebar h2 {
     font-size: 1.2rem;
   }
+
+  .tech-stack {
+    gap: 0.5rem;
+  }
 }
