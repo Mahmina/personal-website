@@ -45,3 +45,21 @@ a {
 .project-link:hover {
   color: #00bebe;;
 }
+
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .table-header-tech,
+  .tech-stack-column {
+    display: none;
+  }
+
+  td {
+    padding-right: 3rem;
+  }
+}

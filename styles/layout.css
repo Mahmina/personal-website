@@ -8,15 +8,17 @@
 }
 
 .sidebar {
-  position: fixed;
+  height: 100%;
+  width: 26rem;  
+  position: fixed; 
+  /* z-index: 1; */
   top: 0;
-  left: 0;
-  width: 26rem;       
-  height: 100vh;
+  left: 0;   
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding: 2rem;        
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 main {
@@ -92,4 +94,36 @@ main {
   );
 
   transition: background 0.1s ease;
+}
+
+@media (max-width: 900px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-grid,
+  .education-grid,
+  .project-grid  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education-time,
+  .experience-time {
+    margin-bottom: 1rem;
+  }
+
+  .skill-flex-wrapper {
+    flex-direction: column;
+  }
+
+  .dev-list {
+    grid-template-columns: repeat(5, 7rem);
+  }
+
+  .dev-wrapper h2, .tools-wrapper h2 {
+    margin-bottom: 1.5rem;
+  }
 }
