@@ -24,7 +24,7 @@ A responsive, single-page portfolio website built with HTML, CSS, and vanilla Ja
 #### Option2 (recommended):
 - Install Node.js on your computer
 - Open the terminal in VS code
-- To check if the Node.Js has been successfully installed, execute this command: 
+- To check if the Node.js has been successfully installed, execute this command: 
 ```bash
 node -v
 ```
