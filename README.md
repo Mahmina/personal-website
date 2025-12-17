@@ -2,6 +2,9 @@
 ## Description
 A responsive, single-page portfolio website built with HTML, CSS, and vanilla JavaScript to showcase professional experience, education, projects, and skills. 
 
+You can visit my Personal Portfolio at:
+https://mahmina.github.io/personal-website/
+
 ## Features
 - **Single-page portfolio layout**
 - **Dynamic content rendering**
